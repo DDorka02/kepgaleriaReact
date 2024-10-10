@@ -2,27 +2,23 @@
   text-align: center;
 }
 
-.App-main img{width: 100%;}
+.App-main img {
+  width: 100%;
+}
 
 .fokep,
-.galeria{padding:10px}
+.galeria {
+  padding: 10px;
+}
 
-
-.galeria{
+.galeria {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 
-.App-main .kiemelt{
-  border: 1px solid gray;
-  border-radius: 10px;
-  padding: 10px;
+.App-main .kiemelt {
   width: 80%;
   max-width: 800px;
-  margin:auto;
+  margin: auto;
 }
-
-
-
-

@@ -1,6 +1,6 @@
 import './App.css';
 import Kiskep from './komponensek/Kiskep.js';
-
+import { adatLista } from './adatok.js';
 function App() {
   return (
     <div className="App">
@@ -11,15 +11,14 @@ function App() {
           <div className="fokep">
             <h3>Kép címe</h3>
             <div className="kiemelt">
-              <Kiskep></Kiskep>
+              <Kiskep adat={{ src:"../kepek_kicsi/DSC8847", alt:""}} key={0} />
             </div>
             <p>Leírás leírás leírás</p>
         </div>
         <div className="galeria">
-        <Kiskep></Kiskep>
-        <Kiskep></Kiskep>
-        <Kiskep></Kiskep>
-        <Kiskep></Kiskep>
+            {adatLista.map((elem,index)=> {
+              return(<Kiskep adat={elem} key={index}/>)
+            })}
           </div>
         </main>
         <footer>

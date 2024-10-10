@@ -1,9 +1,10 @@
 import "./Kiskep.css"
 
-export default function Kiskep(){
+export default function Kiskep(props){
     return(
         <div className="kiskep">
-              <img src="../kepek_kicsi/DSC8888.jpeg" alt="" />
+            {console.log(props.adat)}
+              <img src={props.adat.src} alt={props.adat.alt} />
         </div>
     )
 }
